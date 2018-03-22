@@ -9,11 +9,13 @@ import com.example.oromil.boilerppate.di.DaggerActivityComponent;
 
 import javax.inject.Inject;
 
+import butterknife.ButterKnife;
+
 /**
  * Created by Oromil on 13.03.2018.
  */
 
-public abstract class BaseActivity<P extends Presenter> extends AppCompatActivity implements MvpView{
+public abstract class BaseActivity<P extends Presenter> extends AppCompatActivity implements MvpView {
 
     @Inject
     P mPresenter;
@@ -21,10 +23,12 @@ public abstract class BaseActivity<P extends Presenter> extends AppCompatActivit
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(getLayoutID());
 
-        ActivityComponent component= DaggerActivityComponent.create();
+        ActivityComponent component = DaggerActivityComponent.create();
         onComponentCreated(component);
+
+        setContentView(getLayoutID());
+        ButterKnife.bind(this);
 
         mPresenter.attachView(this);
     }
