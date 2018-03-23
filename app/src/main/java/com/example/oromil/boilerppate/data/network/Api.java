@@ -10,10 +10,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
 
 /**
- * Created by Oromil on 13.03.2018.
+ * Created by Oromil on 24.03.2018.
  */
 
-interface Api {
+public interface Api {
 
     String BASE_URL = "";
 
@@ -22,7 +22,7 @@ interface Api {
 
     public class Creator {
 
-        public Api createApi() {
+        public static Api createApi() {
             Retrofit retrofit = new Retrofit.Builder()
                     .baseUrl(BASE_URL)
                     .addConverterFactory(GsonConverterFactory.create())
@@ -32,5 +32,4 @@ interface Api {
             return retrofit.create(Api.class);
         }
     }
-
 }

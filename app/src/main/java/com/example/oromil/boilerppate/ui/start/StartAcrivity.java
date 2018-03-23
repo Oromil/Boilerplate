@@ -1,7 +1,7 @@
 package com.example.oromil.boilerppate.ui.start;
 
 import com.example.oromil.boilerppate.R;
-import com.example.oromil.boilerppate.di.ActivityComponent;
+import com.example.oromil.boilerppate.di.components.ActivityComponent;
 import com.example.oromil.boilerppate.ui.base.BaseActivity;
 
 import javax.inject.Inject;

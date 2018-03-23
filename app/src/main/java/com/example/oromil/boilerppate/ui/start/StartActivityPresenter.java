@@ -2,6 +2,7 @@ package com.example.oromil.boilerppate.ui.start;
 
 import android.util.Log;
 
+import com.example.oromil.boilerppate.di.ConfigPersistent;
 import com.example.oromil.boilerppate.ui.base.BasePresenter;
 import com.example.oromil.boilerppate.ui.base.Presenter;
 
@@ -11,6 +12,7 @@ import javax.inject.Inject;
  * Created by Oromil on 13.03.2018.
  */
 
+@ConfigPersistent
 public class StartActivityPresenter extends BasePresenter<StartActivityMvpView>{
 
     @Inject
