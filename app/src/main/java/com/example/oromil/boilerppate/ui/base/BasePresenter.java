@@ -6,7 +6,7 @@ package com.example.oromil.boilerppate.ui.base;
 
 public abstract class BasePresenter<V extends MvpView> implements Presenter<V>{
 
-    V mView;
+    protected V mView;
 
     @Override
     public void attachView(V view) {
@@ -19,5 +19,5 @@ public abstract class BasePresenter<V extends MvpView> implements Presenter<V>{
         mView = null;
     }
 
-    protected abstract void onViewAttached();
+    protected void onViewAttached(){}
 }

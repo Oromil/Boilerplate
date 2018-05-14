@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">BoilerPpate</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="save">Save</string>
+
+    <!--NavigationDrawer-->
+    <string name="item_blank">Blank</string>
+    <string name="item_physyology">Physyology</string>
+    <string name="item_statistic">Statistic</string>
+    <string name="item_consumables_changing">Consumables changing</string>
+    <string name="item_start">Start/Pause</string>
+    <string name="item_settings">Settings</string>
+    <string name="item_reference">Reference</string>
+    
+    
+    <!--blank-->
+    <string name="initials">Name:</string>
+    <string name="height">Height:</string>
+    <string name="weight">Weight:</string>
+    <string name="diagnosis">Diagnosis:</string>
+    <string name="surname_hint">Surname</string>
+    <string name="name_hint">Name</string>
+    <string name="patronymic_hint">Patronymic</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="gender">Gender:</string>
+
 </resources>

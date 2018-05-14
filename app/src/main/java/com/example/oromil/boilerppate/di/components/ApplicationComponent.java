@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 
 
+import com.example.oromil.boilerppate.data.DataManager;
 import com.example.oromil.boilerppate.di.ApplicationContext;
 import com.example.oromil.boilerppate.di.modules.ApplicationModule;
 
@@ -26,7 +27,7 @@ public interface ApplicationComponent {
 
 //    DatabaseHelper databaseHelper();
 
-//    DataManager dataManager();
+    DataManager dataManager();
 
 }
 

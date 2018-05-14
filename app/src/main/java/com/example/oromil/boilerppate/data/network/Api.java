@@ -1,6 +1,6 @@
 package com.example.oromil.boilerppate.data.network;
 
-import com.example.oromil.boilerppate.data.Entity;
+import com.example.oromil.boilerppate.data.UserData;
 
 import java.util.List;
 
@@ -18,7 +18,7 @@ public interface Api {
     String BASE_URL = "";
 
     @GET("")
-    List<Entity> requestData();
+    List<UserData> requestData();
 
     public class Creator {
 

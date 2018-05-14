@@ -32,7 +32,7 @@ public abstract class BaseActivity<P extends Presenter> extends AppCompatActivit
     private ActivityComponent mActivityComponent;
 
     @Inject
-    P mPresenter;
+    protected P mPresenter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -54,6 +54,8 @@ public abstract class BaseActivity<P extends Presenter> extends AppCompatActivit
         setContentView(getLayoutID());
         ButterKnife.bind(this);
 
+        setupViews();
+
         mPresenter.attachView(this);
     }
 
@@ -73,4 +75,6 @@ public abstract class BaseActivity<P extends Presenter> extends AppCompatActivit
         super.onDestroy();
         mPresenter.detachView();
     }
+
+    protected void setupViews(){}
 }
